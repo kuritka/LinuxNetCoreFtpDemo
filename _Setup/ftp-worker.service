@@ -1,0 +1,9 @@
+[Unit]
+Description=FtpWorker Service
+
+[Service]
+ExecStart=/usr/bin/dotnet /opt/FtpWorker/FtpWorkerSvc.dll
+Restart=always
+
+[Install]
+WantedBy=default.target
